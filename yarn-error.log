@@ -1,5 +1,5 @@
 Arguments: 
-  D:\Program Files\nodejs\node.exe C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js test
+  D:\Program Files\nodejs\node.exe C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add enzym@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
 
 PATH: 
   C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\PuTTY\;D:\Program Files\Maven\bin;D:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\nodejs\;d:\Program Files\Git\cmd;C:\Program Files (x86)\Google\Chrome\Application;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\java\Git\cmd;C:\Users\Daniel\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Sublime Text 3;D:\Java\jdk1.8.0_51\bin;C:\Users\Daniel\AppData\Roaming\npm;d:\Program Files\Heroku\bin;d:\Program Files\Microsoft VS Code\bin
@@ -38,7 +38,7 @@ npm manifest:
       "global": "^4.3.2",
       "jest": "20.0.4",
       "live-server": "^1.2.0",
-      "moment": "2.18.1",
+      "moment": "^2.21.0",
       "node-sass": "4.5.3",
       "normalize.css": "7.0.0",
       "react": "16.0.0",
@@ -48,6 +48,7 @@ npm manifest:
       "react-modal": "2.2.2",
       "react-redux": "5.0.5",
       "react-router-dom": "4.2.2",
+      "react-test-renderer": "16.0.0",
       "redux": "3.7.2",
       "sass-loader": "6.0.6",
       "style-loader": "0.18.2",
@@ -3978,11 +3979,7 @@ Lockfile:
     dependencies:
       minimist "0.0.8"
   
-  moment@2.18.1:
-    version "2.18.1"
-    resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
-  
-  moment@>=1.6.0:
+  moment@>=1.6.0, moment@^2.21.0:
     version "2.21.0"
     resolved "https://registry.yarnpkg.com/moment/-/moment-2.21.0.tgz#2a114b51d2a6ec9e6d83cf803f838a878d8a023a"
   
@@ -5053,6 +5050,13 @@ Lockfile:
       path-to-regexp "^1.7.0"
       prop-types "^15.5.4"
       warning "^3.0.0"
+  
+  react-test-renderer@16.0.0:
+    version "16.0.0"
+    resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.0.0.tgz#9fe7b8308f2f71f29fc356d4102086f131c9cb15"
+    dependencies:
+      fbjs "^0.8.16"
+      object-assign "^4.1.1"
   
   react@16.0.0:
     version "16.0.0"
@@ -6432,17 +6436,11 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c jest
-  Directory: D:\Users\Daniel\Desktop\react-course-projects\expensify-app
-  Output:
-  
-      at ProcessTermError.MessageError (C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  Error: Couldn't find package "enzym" on the "npm" registry.
+      at new MessageError (C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at NpmResolver.<anonymous> (C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:51625:15)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at C:\Users\Daniel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
