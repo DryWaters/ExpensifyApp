@@ -10,7 +10,7 @@ import {
   startRemoveExpense,
   startEditExpense } from '../../actions/expenses.js';
 import expenses from '../fixtures/expenses';
-import  database  from '../../firebase/firebase';
+import database from '../../firebase/firebase';
 
 const createMockStore = configureMockStore([thunk]);
 

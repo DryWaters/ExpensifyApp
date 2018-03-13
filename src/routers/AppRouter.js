@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import AddExpensePage from '../components/AddExpensePage';
 import EditExpensePage from '../components/EditExpensePage';
 import ExpenseDashboardPage from '../components/ExpenseDashboardPage';
+import LoginPage from '../components/LoginPage';
 import NotFoundPage from '../components/NotFoundPage';
 import Header from '../components/Header';
 
@@ -11,7 +12,8 @@ const AppRouter = () => (
     <div>
       <Header />
       <Switch>
-        <Route path='/' component={ExpenseDashboardPage} exact={true} />
+        <Route path='/' component={LoginPage} exact={true} />
+        <Route path='/dashboard' component={ExpenseDashboardPage} />
         <Route path='/create' component={AddExpensePage} />
         <Route path='/edit/:id' component={EditExpensePage} />
         <Route component={NotFoundPage} />
