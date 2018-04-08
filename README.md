@@ -4,6 +4,6 @@ https://www.udemy.com/react-2nd-edition
 
 Actual running application can be found at:
 
-http://expensify.watersjournal.com/:4020
+http://expensify.watersjournal.com:4020
 
 Uses Firebase for the backend and React for the front.
